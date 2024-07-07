@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e0f7fa;
+    /* background-color: blue; */
+}
+.header{
+    height: 75px;
+    width: 100;
+    top: 0;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    /* border-bottom: solid 2px black ; */
+    position: sticky;
+    z-index: 100;
+    box-shadow: 5px brown;
+    
+} 
+.logo{
+    color:  skyblue;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.nav a{
+    margin-right: 45px; 
+    text-decoration: none;
+    color:black;
+    /* align-items: center; */
+}
+.bott button{
+    width: 96px;
+    height: 35px;
+    background-color: skyblue;
+    outline: none;
+    border-style:none ;
+    border-radius: 12px;
+    cursor: pointer;
+   align-items: center;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ hr {
+    border: none; /* Remove the default border */
+    height: 0.5px; /* Set the height of the line */
+    background-color: black; /* Set the color of the line */
+    margin-top: 7px; /* Set the top margin */
+    width: 1050px;
+    margin-left: 70px;
+    box-shadow: 0 0 4px gray;
+    position: sticky;
+    z-index: 100;
+    top: 75px;
+    
+}
+.main{
+    /* margin: 0px 45px 0px 45px; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: #2861dc; */
+}
+.heroes{
+    margin-top: 0px;
+  
+    display: flex;
+    height: 73vh;
+    /* background-color: #2861dc; */
+}
+.text{
+    margin-top: 75px;
+    width: 480px;
+   
+    height: 200px;
+    margin-left: 100px;
+
+    
+
+}
+
+
+.text h1{
+    margin-top: 20px;
+    font-size: 51px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.pic img{
+    /* background-color: red; */
+    width: 480px;
+    margin-left: 120px;
+    height: 360px;
+    margin-top: 75px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.text button{
+    margin-left: 155px;
+    margin-top: 17px;
+    width: 146px;
+    height: 35px;
+    background-color: skyblue;
+    outline: none;
+    border-style:none ;
+    border-radius: 12px;
+    cursor: pointer;
+   align-items: center;
+   transition-duration: 0.4s;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.text span{
+    color: skyblue;
+}
+.logo span{
+    color: skyblue;
+}
+
+
+
+.chat-container {
+    position: fixed;
+    bottom: -600px;
+    right: 30px;
+    width: 347px;
+    height: 500px; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: bottom 0.5s;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #007bff;
+}
+
+.chat-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 14px; 
+}
+.input-button{
+    background-color: red;
+    border-radius: 00px 20px 20px 0px;
+    width: 40px;
+    outline: none;
+    border-style: none;
+    background-color: skyblue;
+    
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+    clear: both;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    float: right;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f0f0;
+    color: #333;
+    float: left;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0px 0px 20px ;
+    font-size: 14px;
+    outline: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+    .open-button {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        outline: none;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s;
+        width: 50px;
+        margin-left: 1060px;
+        margin-top: 10px;
+        height: 50px;
+        background-image: url('bot.png'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        background-color: #e0f7fa;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+
+.open-button:hover{
+    background-color: skyblue;
+}
+
+
+#open-button  {
+    width: 50px;
+    
+ 
+}
+
+
+.open-button .bot-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}

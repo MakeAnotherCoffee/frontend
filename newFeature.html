@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Counters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eff6fc; /* Sky blue background color */
+        }
+
+        .counter-container {
+            display: flex;
+            gap: 20px;
+            background-color: white; /* White background for counters */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counter {
+            flex: 1;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            color: #333; /* Dark text color */
+        }
+
+        span {
+            font-size: 2em;
+            color: #007bff; /* Blue text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <div class="counter">
+            <h2>Downloads</h2>
+            <span id="downloads">0</span>
+        </div>
+        <div class="counter">
+            <h2>Users</h2>
+            <span id="users">0</span>
+        </div>
+        <div class="counter">
+            <h2>Free Courses</h2>
+            <span id="courses">0</span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let downloads = 0;
+            let users = 0;
+            let courses = 0;
+
+            const maxDownloads = 100;
+            const maxUsers = 50;
+            const maxCourses = 20;
+
+            function updateCounters() {
+                if (downloads < maxDownloads) {
+                    downloads++;
+                }
+                if (users < maxUsers) {
+                    users++;
+                }
+                if (courses < maxCourses) {
+                    courses++;
+                }
+
+                document.getElementById("downloads").innerText = downloads;
+                document.getElementById("users").innerText = users;
+                document.getElementById("courses").innerText = courses;
+            }
+
+            setInterval(updateCounters, 100); // Update counters every second
+        });
+    </script>
+</body>
+</html>
